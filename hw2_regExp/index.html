@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>hw2_wordReplacer</title>
+
+	<script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+	<script src="libraries/p5.sound.js"></script>
+	<script src="sketch.js"></script>
+	<script src="Word.js"></script>
+	<script src="rita-full.min.js"></script>
+
+	<style>
+		body {
+			margin:0;
+			padding:0;
+			overflow: hidden;
+		}
+		canvas {
+			margin:auto;
+		}
+	</style>
+</head>
+<body>
+		<h1 style="margin: 10px">Word Replacer</h1>
+
+		<p style="margin: 10px; font-size: 20px">Replace a word by clicking on it!<br><br></p>
+		<div id="container" style="margin: 10px; width: 600px"></div>
+		<button id="nn" style="width: 100px; height:30px">NOUN</button>
+		<button id="vb" style="width: 100px; height:30px">VERB</button>
+		<button id="jj" style="width: 100px; height:30px">ADJ</button>
+		<button id="rb" style="width: 100px; height:30px">ADV</button>
+
+</body>
+</html>
