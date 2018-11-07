@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Headline News #JustDoIt</title>
+    <script src="https://unpkg.com/ml5@0.1.1/dist/ml5.min.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+      <h1 style="margin: 10px">Headline News #JustDoIt</h1>
+      <h3 style="margin: 10px">
+        <p>Try to generate top 10 headline posts by taking the news title on <a href='https://news.google.com/?hl=en-US&gl=US&ceid=US:en'>Google News</a> as the input base</p>
+        <p>The LSTM model is trained from the data in <a href="https://www.kaggle.com/eliasdabbas/5000-justdoit-tweets-dataset">JustDoIt</a> dataset by following <a href='https://github.com/ml5js/training-lstm'>ml5/training-lstm</a></p>
+      </h3>
+      <p style="margin: 10px">
+          Generate Length: 
+          <input id='length_slider' type='range' min='50' max='200' value='100'>
+          <span id='length'>100</span>
+      </p>
+      <p style="margin: 10px">
+          Temperature: 
+          <input id='temp_slider' type='range' min='0.01' max='1' value='0.5' step='0.1'>
+          <span id='temp'>0.5</span>
+      </p>
+      <button id="generate" style="margin:10px; width: 100px; height:30px">Generate</button>
+      <div id="output" style="margin: 10px"></div>
+      <script src="sketch.js"></script>
+  </body>
+</html>
