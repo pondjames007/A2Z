@@ -1,0 +1,19 @@
+{
+  "name": "lostintrans",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "event-stream": "^4.0.1",
+    "express": "^4.16.4",
+    "mathjs": "^5.3.1",
+    "shuffle-array": "^1.0.1",
+    "socketio": "^1.0.0",
+    "spacy-nlp": "^1.0.9"
+  }
+}
