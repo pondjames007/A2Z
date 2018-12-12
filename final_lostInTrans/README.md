@@ -6,20 +6,20 @@ After learning the project of [im2txt](https://github.com/tensorflow/models/tree
 ## Process
 I randomly pick an image and do *im2txt* through [Runway](https://runwayml.com), and it gives me a sentence caption. 
 
-<img src=“https://github.com/pondjames007/A2Z/blob/master/final_lostInTrans/img/flow3.png”, width="480" height="320">
+![](img/flow3.png)
 
 Then I use [RiTa](https://rednoise.org/rita/index.php) to get nouns from the sentence, and take the nouns to find out the nearest categories I got in *sketchRNN* dataset by *word2vec*. The whole process is worked in *node.js server*. 
 
-<img src=“https://github.com/pondjames007/A2Z/blob/master/final_lostInTrans/img/flow4.png”, width="480" height="320">
+![](img/flow4.png)
 
 ## UI Flow
 To present my project, I reverse the process. I show the sketch first, and make users to choose which image is the base to create the sketch.
 
-<img src=“https://github.com/pondjames007/A2Z/blob/master/final_lostInTrans/img/flow0.png”, width="480" height="320">
+![](img/flow0.png)
 
-<img src=“https://github.com/pondjames007/A2Z/blob/master/final_lostInTrans/img/flow1.png”, width="480" height="320">
+![](img/flow1.png)
 
-<img src=“https://github.com/pondjames007/A2Z/blob/master/final_lostInTrans/img/flow2.png”, width="480" height="320">
+![](img/flow2.png)
 
 At the end, when you choose the correct answer, it will show the sentence captioned, nouns in the sentence, and the categories drawn in the sketch.
 
