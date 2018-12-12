@@ -7,29 +7,29 @@ After learning the project of [im2txt](https://github.com/tensorflow/models/tree
 I randomly pick an image and do *im2txt* through [Runway](https://runwayml.com), and it gives me a sentence caption. 
 
 <p align=“left”>
-	<img src=“https://github.com/pondjames007/A2Z/blob/master/final_lostInTrans/img/flow3.png”, width="480" height="320">
+<img src=“https://github.com/pondjames007/A2Z/blob/master/final_lostInTrans/img/flow3.png”, width="480" height="320">
 </p>
 
 Then I use [RiTa](https://rednoise.org/rita/index.php) to get nouns from the sentence, and take the nouns to find out the nearest categories I got in *sketchRNN* dataset by *word2vec*. The whole process is worked in *node.js server*. 
 
 <p align=“left”>
-	<img src=“https://github.com/pondjames007/A2Z/blob/master/final_lostInTrans/img/flow4.png”, width="480" height="320">
+<img src=“https://github.com/pondjames007/A2Z/blob/master/final_lostInTrans/img/flow4.png”, width="480" height="320">
 </p>
 
 ## UI Flow
 To present my project, I reverse the process. I show the sketch first, and make users to choose which image is the base to create the sketch.
 <p align=“left”>
-	<img src=“https://github.com/pondjames007/A2Z/blob/master/final_lostInTrans/img/flow0.png”, width="480" height="320">
+<img src=“https://github.com/pondjames007/A2Z/blob/master/final_lostInTrans/img/flow0.png”, width="480" height="320">
 </p>
 <p align=“left”>
-	<img src=“https://github.com/pondjames007/A2Z/blob/master/final_lostInTrans/img/flow1.png”, width="480" height="320">
+<img src=“https://github.com/pondjames007/A2Z/blob/master/final_lostInTrans/img/flow1.png”, width="480" height="320">
 </p>
 <p align=“left”>
-	<img src=“https://github.com/pondjames007/A2Z/blob/master/final_lostInTrans/img/flow2.png”, width="480" height="320">
+<img src=“https://github.com/pondjames007/A2Z/blob/master/final_lostInTrans/img/flow2.png”, width="480" height="320">
 </p>
 
 At the end, when you choose the correct answer, it will show the sentence captioned, nouns in the sentence, and the categories drawn in the sketch.
 
 ## Future Steps
-	* Do the reverse process/ feedback loop: make users draw the sketch and see how the computer will choose the image. Or take the generated sketch as an input and make a loop.
-	* Larger word2vec database and larger sketch categories
+* Do the reverse process/ feedback loop: make users draw the sketch and see how the computer will choose the image. Or take the generated sketch as an input and make a loop.
+* Larger word2vec database and larger sketch categories
